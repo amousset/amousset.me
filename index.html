@@ -2,18 +2,87 @@
 <html>
 
 <head>
-  <meta name="description" content="Alexis Mousset's homepage" />
-  <meta charset="utf-8">
-  <title>Alexis Mousset</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="author" content="Alexis Mousset">
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/milligram.min.css">
+    <meta name="description" content="Alexis Mousset's homepage" />
+    <meta charset="utf-8">
+    <title>Alexis Mousset</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Alexis Mousset">
+    <link rel="icon" type="image/png" href="img/favicon.png" />
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
-  
-	<h1>Plop</h1>
+    <div class="content">
+        <header>
+            <span class="links">
+                <a href="https://github.com/amousset">github</a> ⋅
+                <a href="https://twitter.com/AlexisMousset">twitter</a> ⋅
+                <a href="https://pics.amousset.me">photography</a>
+            </span>
+            <h1>Alexis Mousset</h1>
+        </header>
 
+        <p>I'm a system engineer, working on open-source infrastructure software.
+            I do system programming in Rust (and sometimes C), and Linux system management (packaging, server
+            administration, containers, observability, etc).
+            I'm also interested in documentation and UX topics.
+        </p>
+
+        <h2>projects</h2>
+
+        <img class="project-logo" src="img/rudder.svg" />
+        <h3><a href="https://www.rudder.io">RUDDER</a>
+            <span class="date"> - since 2015</span>
+        </h3>
+
+        <p>I'm currently employed at RUDDER, building system automation tools. The parts of the project I mainly work on
+            are:</p>
+        <ul>
+            <li><span class="project-name"><a
+                        href="https://github.com/Normation/rudder/tree/master/relay/sources/relayd">relayd</a></span>: A
+                network daemon (built in Rust with tokio), the backbone of Rudder's agent-server communication.</li>
+            <li><span class="project-name"><a href="https://docs.rudder.io">documentation</a></span>: Documentation
+                platform for
+                Rudder, including manuals, tutorials and <a href="https://docs.rudder.io/api/">API docs</a></li>
+            <li><span class="project-name"><a href="https://github.com/cfengine/core">configuration agent and
+                        policies</a></span>: Configuration
+                agent for Unix systems, and the configuration policies library
+            </li>
+        </ul>
+
+        <img class="project-logo" src="img/lettre.svg" />
+        <h3><a href="https://lettre.rs">lettre</a> <span class="date"> - since 2014</span></h3>
+
+        <p>An email client for Rust programs allowing easily sending emails from Rust applications by providing
+            pluggable transports and strongly typed modern email features.</p>
+
+        <h3>other contributions</h3>
+
+        <ul>
+            <li><span class="project-name"><a href="https://www.darktable.org/">darktable</a></span>: image processor,
+                did small UI improvements
+                and bugfixes</li>
+        </ul>
+
+        <h2>talks</h2>
+
+        <ul>
+            <li>
+                <span class="project-name">relayd</span>: <a
+                    href="https://speakerdeck.com/rudder/designing-the-future-of-agent-server-communication-in-rudder">Designing
+                    the future of agent-server communication in RUDDER</a><br>
+                <span class="date"><a href="https://cfgmgmtcamp.eu">Configuration Management Camp 2020</a></span>
+            </li>
+        </ul>
+
+        <footer>
+            <a href="mailto:contact@amousset.me">contact@amousset.me</a>
+        </footer>
+    </div>
 </body>
+
 </html>
